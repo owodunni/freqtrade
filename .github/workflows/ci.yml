@@ -1,15 +1,6 @@
 name: Freqtrade CI
 
-on:
-  push:
-    branches:
-      - master
-      - develop
-      - github_actions_tests
-    tags:
-  pull_request:
-  schedule:
-    - cron:  '0 5 * * 4'
+on: [push]
 
 jobs:
   build:
